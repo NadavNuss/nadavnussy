@@ -1,0 +1,18 @@
+commonfields:
+  id: fb8f10b7-f75c-453e-8a2d-43555613ebe4
+  version: 23
+name: random
+script: |-
+  # a = demisto.executeCommand("getIncidents", {})[0]
+  # demisto.results({'res': a})
+  # demisto.setContext(<contextPath>, <value>)
+  demisto.results({'result': {'result': 'test'}})
+type: python
+tags: []
+enabled: true
+args:
+- name: username
+  required: true
+scripttarget: 0
+runonce: false
+runas: DBotWeakRole
